@@ -1,0 +1,55 @@
+/* Warm Paper Light 1.0.0. MIT. */
+
+body.theme-light {
+  --background-primary: #f8f3e7;
+  --background-primary-alt: #f8f3e7;
+  --background-secondary: #efe8d8;
+  --background-secondary-alt: #efe8d8;
+  --background-modifier-form-field: #f8f3e7;
+  --background-modifier-border: #998872;
+  --background-modifier-border-hover: #998872;
+  --background-modifier-border-focus: #24477c;
+  --background-modifier-hover: color-mix(in srgb, #24477c 12%, #efe8d8);
+  --background-modifier-active-hover: color-mix(in srgb, #24477c 18%, #efe8d8);
+  --text-normal: #282217;
+  --text-muted: #514638;
+  --text-faint: #514638;
+  --text-accent: #24477c;
+  --text-accent-hover: #644c79;
+  --text-on-accent: #f8f3e7;
+  --interactive-accent: #24477c;
+  --interactive-accent-hover: #644c79;
+  --text-selection: color-mix(in srgb, #24477c 25%, #f8f3e7);
+  --text-highlight-bg: color-mix(in srgb, #7e4a1b 23%, #f8f3e7);
+  --color-blue: #24477c;
+  --color-orange: #7e4a1b;
+  --color-green: #315e3f;
+  --color-purple: #644c79;
+  --code-background: #efe8d8;
+  --code-normal: #282217;
+  --code-comment: #514638;
+  --code-function: #24477c;
+  --code-keyword: #644c79;
+  --code-string: #315e3f;
+  --link-color: #24477c;
+  --link-external-color: #315e3f;
+  --icon-color: #514638;
+  --nav-item-color: #514638;
+  --nav-item-color-active: #282217;
+  --tab-text-color: #514638;
+}
+
+body.theme-light { --h1-color: var(--color-blue); --h2-color: var(--color-green); }
+.menu, .modal { background: var(--background-primary); }
+
+.workspace-leaf-content :focus-visible,
+.modal :focus-visible,
+.menu :focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: -2px;
+}
+
+.markdown-rendered .list-bullet::after,
+.markdown-source-view .list-bullet::after {
+  background-color: var(--text-muted);
+}
