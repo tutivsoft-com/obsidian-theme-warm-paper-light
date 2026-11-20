@@ -2,7 +2,7 @@
 
 A light Obsidian theme with neutral cream surfaces, dark text and restrained colours.
 
-Version 1.0.0. Modes supported: Light. Tested in Obsidian 1.15.1 on Windows.
+Source version 1.0.1. Modes supported: Light. Tested in Obsidian 1.15.1 on Windows.
 
 ## Preview
 

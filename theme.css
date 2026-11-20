@@ -1,4 +1,4 @@
-/* Warm Paper Light 1.0.0. MIT. */
+/* Warm Paper Light 1.0.1. MIT. */
 
 body.theme-light {
   --background-primary: #f8f3e7;
@@ -41,6 +41,10 @@ body.theme-light {
 
 body.theme-light { --h1-color: var(--color-blue); --h2-color: var(--color-green); }
 .menu, .modal { background: var(--background-primary); }
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
+  padding-inline: 8px;
+}
 
 .workspace-leaf-content :focus-visible,
 .modal :focus-visible,
