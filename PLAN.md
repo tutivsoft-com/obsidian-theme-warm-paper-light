@@ -1,10 +1,8 @@
-# Warm Paper Light
+# Warm Paper Light design plan
 
 A light Obsidian theme with neutral cream surfaces, dark text and restrained colours.
 
-**Status: planning only. No theme code has been written.**
-
-Plan date: 13 November 2026. This repository currently contains this planning README only. The name is a descriptive working name; Community name availability must be checked before any future submission.
+This plan records the original 13 November 2026 proposal, before implementation and publication. See the [README](README.md) for current installation and compatibility information.
 
 Search keywords: Obsidian theme, light mode, cream, warm paper, readable notes.
 
@@ -18,7 +16,7 @@ Light-theme users describe pure white as harsh and some yellow palettes as too y
 
 - [Light-theme preferences and cream versus white](https://www.reddit.com/r/ObsidianMD/comments/1tdwk3a/whats_everyones_favorite_light_theme_setup_in/)
 
-The Reddit links come from the preceding idea research and represent qualitative demand, not a market-size estimate or proof that existing themes do not solve the problem. For Pure OLED Rainbow, the additional requirement comes directly from the owner. Other themes and snippets may already address parts of these needs.
+The Reddit discussion informed the original design proposal.
 
 ## Planned appearance and features
 
@@ -49,8 +47,6 @@ Official references for later implementation:
 - [Submit a theme](https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme)
 - [Developer policies](https://docs.obsidian.md/community-directory/developer-policies)
 
-These are future work items. No release, installation instructions, compatibility certification or Community listing is being claimed by this planning repository.
-
 ## Acceptance checklist for later implementation
 
 - [ ] Review the palette for an excessive yellow cast on several displays.
@@ -60,6 +56,6 @@ These are future work items. No release, installation instructions, compatibilit
 - [ ] Review screenshots for private information and verify all published documentation and asset paths.
 - [ ] Verify the default branch, release revision and uploaded assets before calling any future release complete.
 
-## Current boundary
+## Original planning scope
 
-Only repository creation and this Markdown plan are authorised in this task. Do not add theme CSS, manifests, screenshots, release tags or submissions as part of this planning work. Future work stays on this repository's verified primary branch.
+The 13 November 2026 task covered repository creation and this design plan.

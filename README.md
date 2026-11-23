@@ -2,7 +2,7 @@
 
 A light Obsidian theme with neutral cream surfaces, dark text and restrained colours.
 
-Source version 3.7.0. Modes supported: Light. Tested in Obsidian 1.15.1 on Windows.
+Warm Paper Light supports the Light base colour scheme and requires Obsidian 1.15.1 or later. The [theme manifest](manifest.json) records the current source version.
 
 ## Preview
 
@@ -10,8 +10,17 @@ Source version 3.7.0. Modes supported: Light. Tested in Obsidian 1.15.1 on Windo
 
 ## Install manually
 
-1. Download `manifest.json` and `theme.css` from [release 1.0.0](https://github.com/tutivsoft-com/obsidian-theme-warm-paper-light/releases/tag/1.0.0).
+1. Download `manifest.json` and `theme.css` from [latest published release](https://github.com/tutivsoft-com/obsidian-theme-warm-paper-light/releases/latest).
 2. Put both files in `.obsidian/themes/Warm Paper Light/` in your vault.
-3. Open **Settings > Appearance** and select **Warm Paper Light**. Choose a supported base colour scheme.
+3. Open **Settings > Appearance** and select **Warm Paper Light**. Set the base colour scheme to **Light**.
+
+## Run the source checks
+
+Run the tests from the repository root with Python 3 and the CSS parser dependencies.
+
+```sh
+python -m pip install cssselect2 tinycss2
+python -B -m unittest discover -s tests
+```
 
 See the [original design plan](PLAN.md). [MIT license](LICENSE).
