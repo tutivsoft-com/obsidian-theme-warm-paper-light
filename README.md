@@ -23,4 +23,6 @@ python -m pip install cssselect2 tinycss2
 python -B -m unittest discover -s tests
 ```
 
+See the [desktop UI verification](docs/testing/obsidian-ui-2026-11-24/README.md) for the test results and screenshots.
+
 See the [original design plan](PLAN.md). [MIT license](LICENSE).

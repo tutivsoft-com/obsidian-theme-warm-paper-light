@@ -76,6 +76,9 @@ class ThemeTests(unittest.TestCase):
         palette = self.styles(light["body"])
         self.assertEqual(palette["--background-primary"], "#f8f3e7")
         self.assertEqual(palette["--text-normal"], "#282217")
+        self.assertEqual(palette["--callout-title-color"], "var(--text-normal)")
+        self.assertEqual(palette["--interactive-normal"], "var(--background-primary)")
+        self.assertEqual(palette["--interactive-hover"], "var(--background-modifier-hover)")
         for surface in ("menu", "modal"):
             with self.subTest(surface=surface):
                 self.assertEqual(
@@ -89,7 +92,7 @@ class ThemeTests(unittest.TestCase):
                     "var(--text-muted)",
                 )
 
-    def test_light_focus_outline_and_mobile_padding(self):
+    def test_light_focus_outline_and_editor_padding(self):
         desktop = fixture("theme-light")
         for focused in ("editor", "menu-button", "modal-button"):
             with self.subTest(focused=focused):
@@ -97,8 +100,7 @@ class ThemeTests(unittest.TestCase):
                 self.assertEqual(styles["outline"], "2px solid var(--text-accent)")
                 self.assertEqual(styles["outline-offset"], "-2px")
         self.assertNotIn("outline", self.styles(desktop["unfocused"]))
-        self.assertNotIn("padding-inline", self.styles(desktop["editor"]))
-        for light in (fixture("theme-light is-mobile"), fixture("theme-light", "is-mobile")):
+        for light in (desktop, fixture("theme-light is-mobile"), fixture("theme-light", "is-mobile")):
             self.assertEqual(self.styles(light["editor"])["padding-inline"], "8px")
 
     def test_dark_and_unset_schemes_keep_host_styles(self):

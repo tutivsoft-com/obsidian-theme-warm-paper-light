@@ -17,10 +17,13 @@ body.theme-light {
   --text-accent: #24477c;
   --text-accent-hover: #644c79;
   --text-on-accent: #f8f3e7;
+  --interactive-normal: var(--background-primary);
+  --interactive-hover: var(--background-modifier-hover);
   --interactive-accent: #24477c;
   --interactive-accent-hover: #644c79;
   --text-selection: color-mix(in srgb, #24477c 25%, #f8f3e7);
   --text-highlight-bg: color-mix(in srgb, #7e4a1b 23%, #f8f3e7);
+  --callout-title-color: var(--text-normal);
   --color-blue: #24477c;
   --color-orange: #7e4a1b;
   --color-green: #315e3f;
@@ -44,8 +47,7 @@ body.theme-light { --h1-color: var(--color-blue); --h2-color: var(--color-green)
   background-color: var(--background-primary);
 }
 
-.is-mobile:where(body.theme-light, body.theme-light *)
-  .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
+:where(body.theme-light) .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
   padding-inline: 8px;
 }
 
